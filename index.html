@@ -81,11 +81,82 @@
                     </div>
                     <div class="flex flex-col items-center px-2">
                         <i class="fa-solid fa-plane text-xs text-amber-300"></i>
-                        <span class="text-[10px] text-sky-100 mt-0.5">往返</span>
+                        <span class="text-[10px] text-sky-100 mt-0.5">往返航班</span>
                     </div>
                     <div class="text-center flex-1">
                         <span class="block text-xs text-sky-100">抵達機場</span>
                         <span class="font-bold text-sm tracking-wide">澎湖 (MZG)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 航班登機證卡片 -->
+            <div class="mt-4 bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden">
+                <div class="bg-slate-800 text-white px-4 py-2.5 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-plane-departure text-sky-400 text-sm"></i>
+                        <span class="text-xs font-bold tracking-wider">來回航班詳細資訊</span>
+                    </div>
+                    <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">電子機票</span>
+                </div>
+
+                <div class="p-4 space-y-4">
+                    <!-- 去程航班：立榮航空 -->
+                    <div class="rounded-xl border border-emerald-100 bg-gradient-to-r from-emerald-50/70 to-white p-3.5 relative">
+                        <div class="flex items-center justify-between mb-2 pb-2 border-b border-emerald-100/80">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                                <span class="text-xs font-extrabold text-emerald-900">去程 · 立榮航空 UNI AIR</span>
+                            </div>
+                            <span class="text-xs font-black tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">B7-8639</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-left">
+                                <span class="text-lg font-black text-slate-800">14:50</span>
+                                <span class="block text-xs text-slate-500 font-medium">台中 RMQ</span>
+                            </div>
+                            <div class="flex-1 px-4 flex flex-col items-center">
+                                <span class="text-[10px] font-semibold text-emerald-600 mb-0.5">12/11 (週三) · 45分</span>
+                                <div class="w-full flex items-center justify-center relative">
+                                    <div class="h-0.5 w-full bg-emerald-300"></div>
+                                    <i class="fa-solid fa-plane text-emerald-600 text-xs absolute"></i>
+                                </div>
+                                <span class="text-[10px] text-slate-400 mt-0.5">直飛</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-lg font-black text-slate-800">15:35</span>
+                                <span class="block text-xs text-slate-500 font-medium">澎湖 MZG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 回程航班：華信航空 -->
+                    <div class="rounded-xl border border-sky-100 bg-gradient-to-r from-sky-50/70 to-white p-3.5 relative">
+                        <div class="flex items-center justify-between mb-2 pb-2 border-b border-sky-100/80">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                                <span class="text-xs font-extrabold text-sky-900">回程 · 華信航空 Mandarin Airlines</span>
+                            </div>
+                            <span class="text-xs font-black tracking-wider text-sky-700 bg-sky-100 px-2 py-0.5 rounded">AE-792</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-left">
+                                <span class="text-lg font-black text-slate-800">17:35</span>
+                                <span class="block text-xs text-slate-500 font-medium">澎湖 MZG</span>
+                            </div>
+                            <div class="flex-1 px-4 flex flex-col items-center">
+                                <span class="text-[10px] font-semibold text-sky-600 mb-0.5">12/13 (週五) · 40分</span>
+                                <div class="w-full flex items-center justify-center relative">
+                                    <div class="h-0.5 w-full bg-sky-300"></div>
+                                    <i class="fa-solid fa-plane text-sky-600 text-xs absolute"></i>
+                                </div>
+                                <span class="text-[10px] text-slate-400 mt-0.5">直飛</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-lg font-black text-slate-800">18:15</span>
+                                <span class="block text-xs text-slate-500 font-medium">台中 RMQ</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +173,7 @@
                             <span class="text-xs font-bold text-amber-600 tracking-wider">集合報到</span>
                             <h3 class="text-base font-bold text-slate-800">12/11 下午 13:00</h3>
                             <p class="text-xs text-slate-500 mt-0.5 flex items-center gap-1">
-                                <i class="fa-solid fa-location-dot text-slate-400"></i> 台中機場大廳集合
+                                <i class="fa-solid fa-location-dot text-slate-400"></i> 台中清泉崗機場大廳集合（預留充分時間報到與安檢）
                             </p>
                         </div>
                     </div>
@@ -117,11 +188,11 @@
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center justify-between">
                                 <span class="text-xs font-bold text-emerald-600 tracking-wider">交通取還</span>
-                                <span class="text-[11px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md font-semibold">機場接駁</span>
+                                <span class="text-[11px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md font-semibold">機場專車接駁</span>
                             </div>
                             <h3 class="text-base font-bold text-slate-800">996 租車公司</h3>
                             <p class="text-xs text-slate-600 mt-1">
-                                <i class="fa-regular fa-calendar-check text-slate-400 mr-1"></i>12/11 16:00 ~ 12/13 16:00
+                                <i class="fa-regular fa-calendar-check text-slate-400 mr-1"></i>12/11 16:00 ~ 12/13 16:00 (共48小時)
                             </p>
                             <div class="grid grid-cols-2 gap-2 mt-3">
                                 <a href="tel:069269996" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs active:scale-95 transition">
@@ -166,45 +237,64 @@
                         <span class="text-xs text-slate-500">12月11日 (週三)</span>
                     </div>
                 </div>
-                <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-100">飛抵報到</span>
+                <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-100">出發啟航</span>
             </div>
 
             <!-- 時間軸列表 -->
             <div class="relative pl-6 space-y-4 before:content-[''] before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-sky-200">
-                <!-- 節點 1 -->
+                <!-- 節點 1: 集合 -->
                 <div class="relative">
-                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-sky-600 ring-4 ring-sky-100"></span>
+                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-amber-500 ring-4 ring-amber-100"></span>
                     <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
-                        <span class="text-xs font-black text-sky-600">13:00</span>
+                        <span class="text-xs font-black text-amber-600">13:00</span>
                         <h4 class="font-bold text-sm text-slate-800 mt-0.5">台中機場大廳集合</h4>
-                        <p class="text-xs text-slate-500 mt-1">確認行李證件，準備登機出發</p>
+                        <p class="text-xs text-slate-500 mt-1">人員會合、確認行李與身分證件，辦理登機報到與托運</p>
                     </div>
                 </div>
-                <!-- 節點 2 -->
+
+                <!-- 節點 2: 起飛 (新增詳細航班) -->
+                <div class="relative">
+                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                    <div class="bg-emerald-50/50 p-3.5 rounded-2xl border border-emerald-200 shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-black text-emerald-700">14:50</span>
+                            <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">起飛</span>
+                        </div>
+                        <h4 class="font-bold text-sm text-emerald-950 mt-0.5">立榮航空 B7-8639 起飛</h4>
+                        <p class="text-xs text-emerald-800/80 mt-1">台中清泉崗機場 (RMQ) 出發前往澎湖</p>
+                    </div>
+                </div>
+
+                <!-- 節點 3: 抵達 -->
                 <div class="relative">
                     <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-sky-600 ring-4 ring-sky-100"></span>
                     <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
-                        <span class="text-xs font-black text-sky-600">15:30</span>
-                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">飛抵澎湖機場</h4>
-                        <p class="text-xs text-slate-500 mt-1">提領行李、與租車公司聯絡接駁</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-black text-sky-600">15:35</span>
+                            <span class="text-[10px] font-bold bg-sky-100 text-sky-700 px-2 py-0.5 rounded">抵達</span>
+                        </div>
+                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">飛抵澎湖機場 (MZG)</h4>
+                        <p class="text-xs text-slate-500 mt-1">提領行李出關，聯繫 996 租車專車接駁</p>
                     </div>
                 </div>
-                <!-- 節點 3 -->
+
+                <!-- 節點 4: 取車 -->
                 <div class="relative">
-                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-emerald-500 ring-4 ring-emerald-100"></span>
+                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-teal-500 ring-4 ring-teal-100"></span>
                     <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
-                        <span class="text-xs font-black text-emerald-600">16:00</span>
+                        <span class="text-xs font-black text-teal-600">16:00</span>
                         <h4 class="font-bold text-sm text-slate-800 mt-0.5">996 租車公司專車接駁取車</h4>
-                        <p class="text-xs text-slate-500 mt-1">租期開始：12/11 16:00 至 12/13 16:00</p>
+                        <p class="text-xs text-slate-500 mt-1">驗車交車手續、設定導航，租期正式開始</p>
                     </div>
                 </div>
-                <!-- 節點 4 -->
+
+                <!-- 節點 5: 自由行 -->
                 <div class="relative">
                     <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-300 ring-4 ring-slate-100"></span>
                     <div class="bg-slate-50 p-3.5 rounded-2xl border border-dashed border-slate-300">
                         <span class="text-xs font-bold text-slate-500">16:00 ~</span>
                         <h4 class="font-bold text-sm text-slate-700 mt-0.5">隨意自由行</h4>
-                        <p class="text-xs text-slate-500 mt-1">澎澄飯店 Check-in、馬公市區漫遊、尋訪在地美味海鮮晚餐</p>
+                        <p class="text-xs text-slate-500 mt-1">澎澄飯店 Check-in 入住、馬公市區漫步、尋訪道地海鮮料理晚餐</p>
                     </div>
                 </div>
             </div>
@@ -230,8 +320,8 @@
                     <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-teal-500 ring-4 ring-teal-100"></span>
                     <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
                         <span class="text-xs font-black text-teal-600">08:00</span>
-                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">起床享用美味早餐</h4>
-                        <p class="text-xs text-slate-500 mt-1">享用飯店早餐或馬公文康街特色早餐</p>
+                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">起床吃早餐</h4>
+                        <p class="text-xs text-slate-500 mt-1">享用飯店豐盛早餐或文康商圈燒餅小吃</p>
                     </div>
                 </div>
 
@@ -244,7 +334,7 @@
                             <span class="text-[10px] font-bold bg-orange-100 text-orange-700 px-2 py-0.5 rounded">南邊</span>
                         </div>
                         <h4 class="font-bold text-sm text-slate-800 mt-0.5">風櫃洞</h4>
-                        <p class="text-xs text-slate-500 mt-1">欣賞風櫃聽濤、幽浮造型純白觀景台拍照打卡</p>
+                        <p class="text-xs text-slate-500 mt-1">欣賞風櫃聽濤自然海蝕奇景、白色幽浮觀景台</p>
                         <a href="https://www.google.com/maps/search/?api=1&query=風櫃洞" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-flex items-center gap-1.5 text-xs text-sky-700 font-semibold hover:underline">
                             <i class="fa-solid fa-location-arrow"></i> 導航至風櫃洞
                         </a>
@@ -260,7 +350,7 @@
                             <span class="text-[10px] font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">東邊</span>
                         </div>
                         <h4 class="font-bold text-sm text-slate-800 mt-0.5">奎壁山海灘</h4>
-                        <p class="text-xs text-slate-500 mt-1">摩西分海自然奇景（視當日潮汐退潮通行）</p>
+                        <p class="text-xs text-slate-500 mt-1">摩西分海退潮礫石步道踏浪（配合潮汐漫步）</p>
                         <a href="https://www.google.com/maps/search/?api=1&query=奎壁山摩西分海" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-flex items-center gap-1.5 text-xs text-sky-700 font-semibold hover:underline">
                             <i class="fa-solid fa-location-arrow"></i> 導航至奎壁山海灘
                         </a>
@@ -276,7 +366,7 @@
                             <span class="text-[10px] font-bold bg-sky-100 text-sky-700 px-2 py-0.5 rounded">北邊</span>
                         </div>
                         <h4 class="font-bold text-sm text-slate-800 mt-0.5">後寮天堂路</h4>
-                        <p class="text-xs text-slate-500 mt-1">荒廢碼頭蜿蜒入海，如夢似幻的打卡秘境</p>
+                        <p class="text-xs text-slate-500 mt-1">蜿蜒入海的荒廢舊碼頭，純淨海景拍照勝地</p>
                         <a href="https://www.google.com/maps/search/?api=1&query=後寮天堂路" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-flex items-center gap-1.5 text-xs text-sky-700 font-semibold hover:underline">
                             <i class="fa-solid fa-location-arrow"></i> 導航至後寮天堂路
                         </a>
@@ -292,7 +382,7 @@
                             <span class="text-[10px] font-bold bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">西邊</span>
                         </div>
                         <h4 class="font-bold text-sm text-slate-800 mt-0.5">池西柱狀玄武岩</h4>
-                        <p class="text-xs text-slate-500 mt-1">氣勢磅礡的世界級地質景觀與廢棄九孔池</p>
+                        <p class="text-xs text-slate-500 mt-1">鬼斧神工玄武岩壁與退潮九孔池倒影景觀</p>
                         <a href="https://www.google.com/maps/search/?api=1&query=池西柱狀玄武岩" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-flex items-center gap-1.5 text-xs text-sky-700 font-semibold hover:underline">
                             <i class="fa-solid fa-location-arrow"></i> 導航至池西柱狀玄武岩
                         </a>
@@ -305,7 +395,7 @@
                     <div class="bg-slate-50 p-3.5 rounded-2xl border border-dashed border-slate-300">
                         <span class="text-xs font-bold text-slate-500">12:30 ~</span>
                         <h4 class="font-bold text-sm text-slate-700 mt-0.5">隨意自由活動</h4>
-                        <p class="text-xs text-slate-500 mt-1">享用小吃、仙人掌冰、下午茶、海邊放空或返回飯店休息放鬆</p>
+                        <p class="text-xs text-slate-500 mt-1">西嶼特色小吃、仙人掌冰、下午茶咖啡、海風漫遊或飯店休閒</p>
                     </div>
                 </div>
             </div>
@@ -331,8 +421,8 @@
                     <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-amber-500 ring-4 ring-amber-100"></span>
                     <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
                         <span class="text-xs font-black text-amber-600">日間</span>
-                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">特產與伴手禮採購</h4>
-                        <p class="text-xs text-slate-500 mt-1">黑糖糕、干貝醬、花生酥、鹹餅等在地特色伴手禮買齊</p>
+                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">購物行程 · 特產伴手禮</h4>
+                        <p class="text-xs text-slate-500 mt-1">採購黑糖糕、干貝醬、花生酥、鹹餅、海鮮乾貨</p>
                     </div>
                 </div>
 
@@ -340,9 +430,12 @@
                 <div class="relative">
                     <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-emerald-500 ring-4 ring-emerald-100"></span>
                     <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
-                        <span class="text-xs font-black text-emerald-600">15:40</span>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-black text-emerald-600">15:40</span>
+                            <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">準時還車</span>
+                        </div>
                         <h4 class="font-bold text-sm text-slate-800 mt-0.5">996 租車公司還車</h4>
-                        <p class="text-xs text-slate-500 mt-1">完成車輛交接檢查，搭乘接駁車出發前往機場</p>
+                        <p class="text-xs text-slate-500 mt-1">完成車輛檢驗手續，搭乘專車接駁前往澎湖機場</p>
                         <a href="https://maps.google.com/?cid=8321456199076459569" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-flex items-center gap-1.5 text-xs text-sky-700 font-semibold hover:underline">
                             <i class="fa-solid fa-diamond-turn-right"></i> 導航至 996 租車
                         </a>
@@ -354,18 +447,34 @@
                     <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-sky-600 ring-4 ring-sky-100"></span>
                     <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
                         <span class="text-xs font-black text-sky-600">16:00</span>
-                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">抵達澎湖機場</h4>
-                        <p class="text-xs text-slate-500 mt-1">辦理托運與登機手續，候機準備返程</p>
+                        <h4 class="font-bold text-sm text-slate-800 mt-0.5">抵達澎湖機場 (MZG)</h4>
+                        <p class="text-xs text-slate-500 mt-1">華信航空櫃台辦理登機、托運行李、通過安檢後候機</p>
                     </div>
                 </div>
 
-                <!-- 返航 -->
+                <!-- 返航起飛 -->
                 <div class="relative">
-                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-blue-700 ring-4 ring-blue-100"></span>
+                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-blue-600 ring-4 ring-blue-100"></span>
                     <div class="bg-blue-50/70 p-3.5 rounded-2xl border border-blue-200 shadow-sm">
-                        <span class="text-xs font-black text-blue-700">17:35</span>
-                        <h4 class="font-bold text-sm text-blue-950 mt-0.5">班機起飛 · 返回台中</h4>
-                        <p class="text-xs text-blue-800/80 mt-1">平安返抵台中清泉崗機場，旅程圓滿結束！</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-black text-blue-700">17:35</span>
+                            <span class="text-[10px] font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded">起飛</span>
+                        </div>
+                        <h4 class="font-bold text-sm text-blue-950 mt-0.5">華信航空 AE-792 起飛</h4>
+                        <p class="text-xs text-blue-800/80 mt-1">澎湖機場 (MZG) 起飛，返回台中</p>
+                    </div>
+                </div>
+
+                <!-- 抵達台中 -->
+                <div class="relative">
+                    <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-800 ring-4 ring-slate-200"></span>
+                    <div class="bg-slate-900 text-white p-3.5 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-black text-amber-300">18:15</span>
+                            <span class="text-[10px] font-bold bg-slate-800 text-slate-300 px-2 py-0.5 rounded">抵達</span>
+                        </div>
+                        <h4 class="font-bold text-sm text-white mt-0.5">抵達台中清泉崗機場 (RMQ)</h4>
+                        <p class="text-xs text-slate-300 mt-1">領取托運行李，平安返家，旅程圓滿結束！</p>
                     </div>
                 </div>
             </div>
@@ -376,8 +485,8 @@
     <nav class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200/80 z-50 px-4 py-2" style="padding-bottom: max(0.5rem, env(safe-area-inset-bottom));">
         <div class="max-w-md mx-auto flex items-center justify-around">
             <button onclick="scrollToSection('overview')" class="nav-btn flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-sky-600 font-semibold text-xs active:scale-95 transition" data-sec="overview">
-                <i class="fa-solid fa-compass text-base"></i>
-                <span>總覽</span>
+                <i class="fa-solid fa-plane-departure text-base"></i>
+                <span>總覽·航班</span>
             </button>
             <button onclick="scrollToSection('day1')" class="nav-btn flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-slate-400 hover:text-slate-600 font-medium text-xs active:scale-95 transition" data-sec="day1">
                 <i class="fa-regular fa-calendar text-base"></i>
